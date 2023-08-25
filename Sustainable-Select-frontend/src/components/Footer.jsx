@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Facebook,
   Instagram,
@@ -7,137 +8,69 @@ import {
   Room,
   Twitter,
 } from "@material-ui/icons";
-import styled from "styled-components";
-import { mobile } from "../responsive";
-
-const Container = styled.div`
-  display: flex;
-  ${mobile({ flexDirection: "column" })}
-`;
-
-const Left = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-`;
-
-const Logo = styled.h1``;
-
-const Desc = styled.p`
-  margin: 20px 0px;
-`;
-
-const SocialContainer = styled.div`
-  display: flex;
-`;
-
-const SocialIcon = styled.div`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: white;
-  background-color: #${(props) => props.color};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-`;
-
-const Center = styled.div`
-  flex: 1;
-  padding: 20px;
-  ${mobile({ display: "none" })}
-`;
-
-const Title = styled.h3`
-  margin-bottom: 30px;
-`;
-
-const List = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListItem = styled.li`
-  width: 50%;
-  margin-bottom: 10px;
-`;
-
-const Right = styled.div`
-  flex: 1;
-  padding: 20px;
-  ${mobile({ backgroundColor: "#fff8f8" })}
-
-`;
-
-const ContactItem = styled.div`
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-`;
-
-const Payment = styled.img`
-    width: 50%;
-`;
-
+import "./Footer.css"; // Import the CSS file
+import logo from "./logo.png";
 const Footer = () => {
   return (
-    <Container>
-      <Left>
-        <Logo>LAMA.</Logo>
-        <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
-        </Desc>
-        <SocialContainer>
-          <SocialIcon color="3B5999">
+    <div className="footer-container">
+    <div className="footer-left">
+      <div className="logo-and-text">
+        <img src={logo} alt="EcoShop Logo" className="logo-image" />
+        <div className="title-wrapper">
+          <p className="logo-title">EcoShop</p>
+          <p className="tagline">by CarbonSense</p>
+        </div>
+      </div>
+        <p className="footer-desc">
+          Your destination for sustainable selections.
+          Discover a wide range of eco-friendly products that align with your
+          values.
+        </p>
+        <div className="social-container">
+          <div className="social-icon facebook">
             <Facebook />
-          </SocialIcon>
-          <SocialIcon color="E4405F">
+          </div>
+          <div className="social-icon instagram">
             <Instagram />
-          </SocialIcon>
-          <SocialIcon color="55ACEE">
+          </div>
+          <div className="social-icon twitter">
             <Twitter />
-          </SocialIcon>
-          <SocialIcon color="E60023">
+          </div>
+          <div className="social-icon pinterest">
             <Pinterest />
-          </SocialIcon>
-        </SocialContainer>
-      </Left>
-      <Center>
-        <Title>Useful Links</Title>
-        <List>
-          <ListItem>Home</ListItem>
-          <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Order Tracking</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Terms</ListItem>
-        </List>
-      </Center>
-      <Right>
-        <Title>Contact</Title>
-        <ContactItem>
-          <Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
-        </ContactItem>
-        <ContactItem>
-          <Phone style={{marginRight:"10px"}}/> +1 234 56 78
-        </ContactItem>
-        <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@lama.dev
-        </ContactItem>
-        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
-      </Right>
-    </Container>
+          </div>
+        </div>
+      </div>
+      <div className="footer-center">
+        <h3 className="footer-title">Explore</h3>
+        <ul className="footer-list">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Blog</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+      <div className="footer-right">
+        <h3 className="footer-title">Contact Us</h3>
+        <div className="contact-item">
+          <Room className="contact-icon" />
+          622 Dixie Path, South Tobinchester 98336
+        </div>
+        <div className="contact-item">
+          <Phone className="contact-icon" /> +1 234 56 78
+        </div>
+        <div className="contact-item">
+          <MailOutline className="contact-icon" /> contact@ecoshop.com
+        </div>
+        <img
+          src="https://i.ibb.co/Qfvn4z6/payment.png"
+          alt="Payment Methods"
+          className="payment"
+        />
+      </div>
+    </div>
   );
 };
 

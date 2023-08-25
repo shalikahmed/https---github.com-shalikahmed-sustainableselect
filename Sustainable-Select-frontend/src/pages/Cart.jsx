@@ -185,9 +185,7 @@ const Cart = () => {
   }, [stripeToken, cart.total, history]);
   return (
     <Container>
-      <Navbar />
-      <Announcement />
-      <Wrapper>
+      <Navbar />      <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
           <TopButton>CONTINUE SHOPPING</TopButton>

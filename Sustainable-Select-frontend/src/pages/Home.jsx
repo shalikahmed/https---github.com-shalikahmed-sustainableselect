@@ -6,15 +6,19 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import Slider from "../components/Slider";
-
+import Season from "../components/season";
+import OurValues from "../components/OurValues";
+import SustainableWorks from "../components/SustainableWorks";
 const Home = () => {
   return (
     <div>
-      <Announcement />
       <Navbar />
       <Slider />
       <Categories />
       <Products/>
+      <Season/>
+      <OurValues/>
+      <SustainableWorks/>
       <Newsletter/>
       <Footer/>
     </div>

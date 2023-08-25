@@ -1,46 +1,147 @@
 export const sliderItems = [
-    {
-      id: 1,
-      img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
-      title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "f5fafd",
-    },
-    {
-      id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
-      title: "AUTUMN COLLECTION",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fcf1ed",
-    },
-    {
-      id: 3,
-      img: "https://i.ibb.co/cXFnLLV/3.png",
-      title: "LOUNGEWEAR LOVE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fbf0f4",
-    },
-  ];
+  
+  {
+    id: 1,
+    img: require("./images/1.png"),
+    bg: "d7e8ea",
+    className: "first-image"
+  },
+  {
+    id: 2,
+    img: require("./images/2.png"),
+    bg: "d7e8ea",
+    className: "second-image"
+  },
+  {
+    id: 3,
+    img: require("./images/3.png"),
+    bg: "d7e8ea",
+    className: "third-image"
+  },
+
+  {
+    id: 4,
+    img: require("./images/4.png"),
+    bg: "d7e8ea",
+    className: "fourth-image"
+  },
+  {
+    id: 5,
+    img: require("./images/5.png"),
+    bg: "d7e8ea",
+    className: "fifth-image"
+  },
+  {
+    id: 6,
+    img: require("./images/6.png"), 
+    bg: "d7e8ea",
+    className: "sixth-image"
+  },
+  
+
+ 
+
+  
+  
+];
+
+export const summerProducts = [
+  {
+    id: 1,
+    title: "Al-Marai",
+    image: require("./images/prod11.jpg"),
+    price: "$29.99",
+    className: "cat-one"
+  },
+  {
+    id: 2,
+    title: "Blue De Chanel",
+    image: require("./images/prod12.jpg"),
+    price: "$49.99",
+    className: "cat-two"
+  },
+  {
+    id: 3,
+    title: "Martinelli",
+    image: require("./images/prod13.jpg"),
+    price: "$99.99",
+    className: "cat-three"
+  },
+
+];
 
   export const categories = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
-      cat:"women"
+      img: require("./images/prod3.jpg"),
+      title: "SPUCE MULTI-PURPOSE",
+      cat:"women",
+      price: 25.99,
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
-      cat:"coat"
+      img: require("./images/prod2.jpg"),
+      title: "ESTEE LAUDER",
+      cat:"coat",
+      price: 59.99,
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
-      cat:"jeans"
+      img: require("./images/prod1.jpg"),  
+          title: "ECO BRUSHES",
+      cat:"jeans",
+      price: 35.99,
     },
+    {
+      id: 3,
+      img: require("./images/prod4.jpg"),  
+          title: "ERBOLOGY OILS",
+      cat:"jeans",
+      price: 53.99
+    },
+    {
+      id: 1,
+      img: require("./images/prod5.jpg"),
+      title: "SUMMER TEES",
+      cat:"women",
+      price: 29.99
+    },
+    {
+      id: 1,
+      img: require("./images/prod6.jpg"),
+      title: "COCOOILS",
+      cat:"women",
+      price: 16.99
+    },
+    {
+      id: 1,
+      img: require("./images/prod7.jpg"),
+      title: "KETTL TEA",
+      cat:"women",
+      price: 24.99
+    },
+    {
+      id: 1,
+      img: require("./images/prod8.jpg"),
+      title: "ECO SHOES",
+      cat:"women",
+      price: 34.99
+    },
+    {
+      id: 1,
+      img: require("./images/prod9.jpg"),
+      title: "GREEN BAGS",
+      cat:"women",
+      price: 24.99
+    },
+    {
+      id: 1,
+      img: require("./images/prod10.jpg"),
+      title: "KINN BOTTLES",
+      cat:"women",
+      price: 55.99
+    },
+    
   ];
 
   export const popularProducts = [
